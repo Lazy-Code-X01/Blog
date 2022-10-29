@@ -2,26 +2,6 @@
 @import './fonts';
 @import './color';
 @import './utilities';
-.ml10 {
-    position: relative;
-    font-weight: 900;
-    font-size: 4em;
-  }
-  
-  .ml10 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-  
-  .ml10 .letter {
-    display: inline-block;
-    line-height: 1em;
-    transform-origin: 0 0;
-  }/*# sourceMappingURL=index.css.map */
 
 *{
     margin:0; padding:0;
@@ -33,6 +13,7 @@
         scroll-behavior: smooth;
     }
 }
+
 body{
     font-family: $roboto;
 }
@@ -145,7 +126,7 @@ body{
 
 #menu-btn{
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 15px;
     padding:1rem 1.3rem;
     border-radius: .5rem;
     color: $main-color;

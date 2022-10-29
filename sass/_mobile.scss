@@ -75,9 +75,14 @@ $desktop: 1200px;
     body{
         // background-color: #e8e8e8;
     }
-
+    .top-section {
+        .search{
+            // height: 10vh;
+        }
+    }
     .header{
         padding: 1.2rem 3%;
+        // top: 17%;
     }
 
     .header .logo{
@@ -297,6 +302,7 @@ $desktop: 1200px;
         }
         .search{
             width: 45%;
+            display: none;
         }
     }
     
@@ -310,17 +316,17 @@ $desktop: 1200px;
     .top-section{
         padding: 1rem 1%;
         .welcome-h{
-            font-size: 12px;
+            font-size: 10px;
         }
     }
     .header{
 
         .logo{
-            font-size: 12px;
+            font-size: 10px;
         }
 
         .user-auth{
-            font-size: 12px;
+            font-size: 1opx;
         }
     }
 
