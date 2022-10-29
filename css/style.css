@@ -192,6 +192,7 @@
   }
   .header .logo {
     font-size: 10px;
+    display: none;
   }
   .header .user-auth {
     font-size: 1opx;
@@ -738,6 +739,7 @@ body {
   }
   .header .logo {
     font-size: 10px;
+    display: none;
   }
   .header .user-auth {
     font-size: 1opx;
