@@ -289,7 +289,9 @@ $desktop: 1200px;
     body{
         // background-color: rgba(151, 151, 150, 0.712);
     }
-
+    .header .logo{
+        display: none;
+    }
     .top-section{
         justify-content: space-around;
 
