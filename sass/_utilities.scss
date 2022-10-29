@@ -1,0 +1,48 @@
+html{
+    scroll-behavior: smooth;
+    // scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:$black;
+    border-radius: 2px;
+}
+.date{
+    text-transform: capitalize;
+    font: 14px;
+    color: $main-color;
+    margin-bottom: .6em;
+    font-weight: 700;
+}
+#more{
+    display: none;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//for justify content to be around
+@mixin flexCenterAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+//for justify content to be between
+@mixin flexCenterBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

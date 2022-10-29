@@ -1,0 +1,358 @@
+@import './mobile';
+@import './fonts';
+@import './color';
+@import './utilities';
+.ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }/*# sourceMappingURL=index.css.map */
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    html{
+        scroll-behavior: smooth;
+    }
+}
+body{
+    font-family: $roboto;
+}
+
+.top-section{
+    width: 100%;
+    padding: 2rem 2%;
+    // background: green;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .welcome-h{
+        // background-color: lightcoral;
+        width: max-content;
+        height: 5vh;
+        display: flex;
+        font-size: 1.4rem;
+        align-items: center;
+        text-transform: capitalize;
+        font-family: $nunito;
+    }
+    .search{
+        height: 5vh;
+        width: 35%;
+
+        input{
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+            outline: 0;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+            background-color: #f5f5f5;
+        }
+    }
+    .social{
+        width: 17%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: #888997;
+
+        .bx{
+            font-size: 1.3rem;
+            padding: .5em;
+            cursor: pointer;
+        }
+    }
+}
+
+// nav section
+.header{
+    position: fixed;
+    top:10%; left:0; right: 0;
+    z-index: 1000;
+    background: #f5f5f5;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3%;
+    background-color: $light-white;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) all 0.6;
+    &.sticky{
+        top: 0;
+        padding: 2rem 4%;
+    }
+    .logo{
+        font-family: $roboto;
+        font-size: 25px;
+        color:$black;
+        font-weight: 700;
+        // background-color: red;
+    }
+
+    .navbar {
+        // background-color: red;
+        a{
+            font-size: 1rem;
+            color: $light-color;
+            margin-left: 4rem;
+            text-transform: capitalize;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+
+
+    .user-auth{
+        // background-color: red;
+        // background-color: green;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        span{
+            margin-left: .7rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.3rem;
+    border-radius: .5rem;
+    color: $main-color;
+    background: $skyblue;
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: $main-color;
+}
+
+// blog section
+.section{
+    width: 100%;
+    height: 85.4vh;
+    height: 86.8vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    // background-color: green;
+    @include flexCenter;
+    
+    .first-blog-view{
+        width: 100%;
+        height: 97%;
+        display: flex;
+        justify-content: space-around;
+        // background-color: rgb(58, 98, 58);
+        // padding-top: 6rem;
+        padding: 6em 2em 0px 2em;
+
+        .left-blog-view{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // background-color: rgb(27, 19, 19);
+
+            .img-blog{
+                width: 100%;
+                height: 45%;
+                background: url(../images/spidy.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                object-fit: contain;
+            }
+            
+            .text-blog{
+                width: 100%;
+                height: 50%;
+                // background-color: green;
+
+                .header-text{
+                    color: $head-text;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    font-family: $roboto;
+                    font-weight: 700;
+                    margin-bottom: .3em;
+                }
+
+                .body-text{
+                    font-size: 1.2rem;
+                    font-family: $roboto;
+                    line-height: 1.5em;
+                    text-align: justify;
+                    height: 100%;
+                    color: $light-color;
+                    // white-space: wrap;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .right-blog-view{
+            height: 100%;
+            width: 40%;
+            // padding: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // background-color: rgb(27 , 19, 19);
+            .box{
+                width: 100%;
+                height: max-content;
+                border-bottom: 1px solid $main-color;
+                // background-color: green;
+
+                .header-text{
+                    font-family: $nunito;
+                    color: $head-text;
+                    text-transform: uppercase;
+                    line-height: 1.8;
+                    font-size: 1.3rem;
+                }
+
+                .body-text{
+                    margin-bottom: .5em;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $light-color;
+                    font-size: 1rem;
+                    
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+// post you may like
+.second-section{
+    width: 100%;
+    height: max-content;
+    max-width: 1600px;
+    margin: 0 auto;
+    // background-color: green;
+    @include flexCenter;
+    padding-top: 5em;
+
+    .inner-second-section {
+        width: 97%;
+        height: 90%;
+        // background-color: gold;
+        // @include flexCenterAround;
+        .header-text{
+            font-family: $nunito;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 40px;
+            margin-bottom: .5em;
+        }
+
+        .post-you-may-like-section{
+            width: 100%;
+            height: 90%;
+            // background-color: darkgreen;
+            margin-bottom: .5em;
+            @include flexCenterBetween;
+            // justify-content: unset;
+            align-items:flex-start;
+            flex-wrap: wrap;
+            
+            .box{
+                position: relative;
+                width: calc(20% + 3em);
+                height: max-content;
+                margin-bottom: 2em;
+                // margin-left: 22px;
+                // box-shadow: $box-shadow;
+                padding: .7em;
+                border-radius: 0px 0 5px  5px;
+                cursor: pointer;
+                transition: all ease .5s;
+                background-color: #fff;
+
+                &:hover{
+                    transform: scale(98%);
+                }
+                .img-container{
+                    width: 100%;
+                    height: 180px;
+                    background: url(../images/basket-ball-nerd.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    object-fit: contain;
+                    background-position: top center;
+                    margin-bottom: .5em;
+                    
+                }
+                .header-text{
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    font-family: $roboto;
+                    color: $head-text;
+                    font-weight: 700;
+                    margin-bottom: .3em;
+                }
+                
+                .body-text{
+                    font-family:$roboto ;
+                    font-size: 1rem;
+                    font-family: $light-color;
+                    line-height: 1.5em;
+                    text-align: justify;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+#size{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    display: none
+}
+
+@import './mobile';

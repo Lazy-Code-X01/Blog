@@ -1,0 +1,357 @@
+@import './color';
+$smaller-mobile:350px ;
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:115%; right: 2rem;
+        background:#fff;
+        box-shadow: var(--box-shadow);
+        border:var(--border);
+        border-radius: .5rem;
+        width: 30rem;
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .header .navbar.active{        
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .header .navbar a{
+        font-size: 16px;
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: .5rem;
+    }
+
+    .header .navbar a:hover{
+        background: var(--bg);
+    }
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+// ------------------------ body
+
+@media screen and (max-width: $desktop) {
+
+    .date{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+    body{
+        // background-color: #e8e8e8;
+    }
+
+    .header{
+        padding: 1.2rem 3%;
+    }
+
+    .header .logo{
+        font-size: 20px;
+    }
+
+    .section{
+        .first-blog-view{
+
+            .right-blog-view{
+                .box{
+                    .header-text{
+                        font-size: 1.2rem;
+                    }
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .left-blog-view{
+                .text-blog{
+                    .header-text{
+                        font-size: 1.2rem;
+                    }
+
+                    .body-text{
+                        font-size: 14px;
+                        line-height: 1.8;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // second section begins
+    .second-section{
+        .inner-second-section{
+            .header-text{
+                font-size: 30px;
+            }
+
+            .post-you-may-like-section{
+                .box{
+                    width: calc(20% + 3em);
+                }
+            }
+        }
+    }
+}
+
+
+//laptop screen size
+@media screen and (max-width: $laptop) {
+    body{
+        // background-color: rgb(159, 161, 159);
+    }
+
+    .header{
+        .navbar{
+            a{
+                font-size: 16px;
+            }
+        }
+        .user-auth{
+            font-size: 1.3rem;
+        }
+    }
+
+    .top-section{
+        justify-content: space-between;
+
+        .welcome-h{
+            font-size: 2rem;
+        }
+        .social{
+            .bx{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .section{
+        .first-blog-view{
+
+            .right-blog-view{
+                .box{
+                    .header-text{
+                        font-size: 2rem;
+                    }
+
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .left-blog-view{
+                width: 45%;
+                .text-blog{
+
+                    .header-text{
+                        font-size: 2rem;
+                    }
+
+                    .body-text{
+                        font-size: 18px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //second section begins here
+    .second-section{
+        .inner-second-section{
+            .post-you-may-like-section{
+                .box{
+                    width: calc(20% + 9em);
+                    .header-text{
+                        font-size: 2rem;
+                    }
+                    .body-text{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// tablet screen size
+@media screen and (max-width: $tablet) {
+    body{
+        // background-color: rgb(110, 109, 110);
+    }
+    .date{
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+
+    .section{
+        height: auto;
+        padding-top: 2em;
+
+        .first-blog-view{
+            padding-top:10em;
+            height: max-content;
+            flex-direction: column;
+            .right-blog-view{
+                width: 100%;
+                margin-top: 10em;
+
+                .box{
+                    margin-bottom: 2rem;
+                    .header-text{
+                        font-size: 2.5rem;
+                    }
+                    .body-text{
+                        margin-bottom: 1.5rem;
+                    }
+                    a{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .left-blog-view{
+                width: 100%;
+
+                .img-blog{
+                    height: 300px;
+                }
+
+                .text-blog{
+                    .header-text{
+                        font-size: 2.7rem;
+                    }
+                    .body-text{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    //second section starts here
+    .second-section{
+        .inner-second-section{
+            .post-you-may-like-section{
+                flex-direction: column;
+                .box{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// mobile screen size
+
+@media screen and (max-width: $mobile) {
+    body{
+        // background-color: rgba(151, 151, 150, 0.712);
+    }
+
+    .top-section{
+        justify-content: space-around;
+
+
+        .welcome-h{
+            font-size: 14px;
+        }
+        .social{
+            display: none;
+        }
+        .search{
+            width: 45%;
+        }
+    }
+    
+}
+
+// samller mobile screen size
+@media screen and (max-width: $smaller-mobile) {
+    body{
+        // background-color: burlywood;
+    }
+    .top-section{
+        padding: 1rem 1%;
+        .welcome-h{
+            font-size: 12px;
+        }
+    }
+    .header{
+
+        .logo{
+            font-size: 12px;
+        }
+
+        .user-auth{
+            font-size: 12px;
+        }
+    }
+
+    .section{
+        .first-blog-view{
+            .left-blog-view{
+                .text-blog{
+                    .header-text{
+                        font-size: 18px;
+                        line-height: 1.8;
+                    }
+                    .body-text{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .right-blog-view{
+                .box{
+                    .header-text{
+                        font-size: 18px;
+                        line-height: 1.8;
+                    }
+
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
