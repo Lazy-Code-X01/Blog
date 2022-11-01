@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reel Blog</title>
+    <title>Lazy Blog</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -12,17 +12,13 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    
 <!--first section-->
     <div class="top-section">
         <div class="welcome-h">
             welcome to the fastest blog post
         </div>
-        
-        <!-- <h1 class="ml10">
-            <span class="text-wrapper">
-            <span class="letters">Domino Dreams</span>
-            </span>
-        </h1> -->
 
         <div class="search">
             <input type="text" placeholder="search">
@@ -59,7 +55,29 @@
     </header>
 
 <!--section-->
+
+<!--modal-->
+<div class="modal-parent-holder">
+    <div class="parent-modal">
+        <div class="modal-content">
+            <div class="top">
+                <div class="mod-close"><span class="material-symbols-outlined">close</span></div>
+                   <div class="mod-date"><span class="material-symbols-outlined">
+                    calendar_month
+                    </span></div>
+               </div>
+               <div class="title"></div>
+               <div class="body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sunt accusamus adipisci eaque ipsam ipsa maiores reprehenderit. Libero nisi illum ipsa quia hic ab omnis? Nesciunt nulla non minima repellat, voluptates maxime, similique quae omnis autem id necessitatibus sit consequatur qui pariatur ex culpa atque soluta impedit ipsam eius facere voluptate. Facilis id laborum laudantium architecto eveniet tenetur! Aspernatur doloribus, voluptatibus officia expedita natus, unde earum quae exercitationem minus non illo ipsum nam vitae placeat commodi corporis aliquid, assumenda asperiores omnis accusamus? Modi, deleniti, vero voluptatum quia odit perferendis quod illo eligendi dolores ea quos? Adipisci ipsa animi ut accusantium nostrum nam ullam corrupti dignissimos! Laboriosam eaque doloremque quibusdam quas. Fugit voluptate laudantium odit labore voluptates at quisquam nihil? Pariatur dolore cupiditate eum officia fugit odit saepe quos suscipit? Ipsum libero repellendus accusantium nulla officiis. Error, hic, neque explicabo reprehenderit maxime earum, suscipit vel corporis perferendis atque nam similique minima.
+
+               </div>
+           </div> 
+        </div>
+    </div>    
+<!--modal-->
+
     <div class="section">
+
         <div class="first-blog-view">
             <div class="left-blog-view">
                 <div class="img-blog">
@@ -78,50 +96,53 @@
             </div>
 
 <!--right section-->
+
             <div class="right-blog-view">
-                <div class="box">
+
+                <div class="box" onclick="prevBox(this)">
                     <div class="date">aug, 12 2022</div>
                     <h3 class="header-text">news</h3>
                     <p class="body-text">
-                        <a href="#">3 first steps in web designing</a>
+                        <a>3 first steps in web designing</a>
                     </p>
                 </div>
 
-                <div class="box">
+                <div class="box" onclick="prevBox(this)">
                     <div class="date">aug, 12 2022</div>
                     <h3 class="header-text">Lorem, ipsum dolor.</h3>
                     <p class="body-text">
-                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil architecto amet.</a>
+                        <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil architecto amet.</a>
                     </p>
                 </div>
 
-                <div class="box">
+                <div class="box" onclick="prevBox(this)">
                     <div class="date">aug, 12 2022</div>
                     <h3 class="header-text">Lorem, ipsum.</h3>
                     <p class="body-text">
-                        <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, vero?.</a>
+                        <a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, vero?.</a>
                     </p>
                 </div>
 
-                <div class="box">
+                <div class="box" onclick="prevBox(this)">
                     <div class="date">aug, 12 2022</div>
                     <h3 class="header-text">Lorem, ipsum dolor.</h3>
                     <p class="body-text">
-                        <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+                        <a>Lorem ipsum dolor sit amet consectetur.</a>
                     </p>
                 </div>
 
-                <div class="box">
+                <div class="box" onclick="prevBox(this)">
                     <div class="date">aug, 12 2022</div>
                     <h3 class="header-text">Lorem.</h3>
                     <p class="body-text">
-                        <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, velit.</a>
+                        <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, velit.</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
+    
     <!--post you may like --> 
     <div class="second-section">
         <div class="inner-second-section">
@@ -139,10 +160,12 @@
             <!--reset of them are in the dom-->
         </div>
     </div>
+
+
+
+
     <script src="./js/index.js"></script>
-    <!--exporting 3rd party library for annimation-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- <script src="./js/animated_text.js"></script>                                        -->
+    <script src="./js/updated-blog.js"></script>                                -->
     <script src="./js/blogPost__db.js"></script>
 
     <div id="size"></div>

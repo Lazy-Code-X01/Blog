@@ -72,17 +72,8 @@ $desktop: 1200px;
         font-weight: lighter;
     }
 
-    body{
-        // background-color: #e8e8e8;
-    }
-    .top-section {
-        .search{
-            // height: 10vh;
-        }
-    }
     .header{
         padding: 1.2rem 3%;
-        // top: 17%;
     }
 
     .header .logo{
@@ -138,9 +129,6 @@ $desktop: 1200px;
 
 //laptop screen size
 @media screen and (max-width: $laptop) {
-    body{
-        // background-color: rgb(159, 161, 159);
-    }
 
     .header{
         .navbar{
@@ -219,9 +207,6 @@ $desktop: 1200px;
 
 // tablet screen size
 @media screen and (max-width: $tablet) {
-    body{
-        // background-color: rgb(110, 109, 110);
-    }
     .date{
         font-size: 14px;
         line-height: 1.8em;
@@ -286,9 +271,6 @@ $desktop: 1200px;
 // mobile screen size
 
 @media screen and (max-width: $mobile) {
-    body{
-        // background-color: rgba(151, 151, 150, 0.712);
-    }
     .header .logo{
         display: none;
     }
@@ -312,9 +294,6 @@ $desktop: 1200px;
 
 // samller mobile screen size
 @media screen and (max-width: $smaller-mobile) {
-    body{
-        // background-color: burlywood;
-    }
     .top-section{
         padding: 1rem 1%;
         .welcome-h{

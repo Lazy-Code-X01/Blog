@@ -109,8 +109,6 @@ body{
 
 
     .user-auth{
-        // background-color: red;
-        // background-color: green;
         font-size: 1rem;
         display: flex;
         align-items: center;
@@ -336,4 +334,5 @@ body{
     display: none
 }
 
+@import './modal-box_updated-blog';
 @import './mobile';
