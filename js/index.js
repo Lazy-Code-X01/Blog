@@ -20,3 +20,16 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 } 
 
+
+
+const leftBlogView = document.querySelector('.left-blog-view')
+
+leftBlogView.onclick = () =>{
+    location.href = './comin_soon.htm'
+}
+
+const user = document.querySelector('.user-auth')
+
+user.onclick = () =>{
+    location.href = './comin_soon.htm'
+}

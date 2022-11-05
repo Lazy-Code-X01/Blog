@@ -57,7 +57,7 @@ const postYouMayLike = [
 const loadPOstYouMaylike = (postYouMayLike) => {
     postYouMayLike.forEach(e =>{
         let blog = `
-        <div class="box">
+        <div class="box postBox" onclick="nextBox(this)">
             <div class="img-container"></div>
             <div class="date">${e.date}</div>
             <div class="header-text">${e.headerText}</div>
@@ -68,3 +68,7 @@ const loadPOstYouMaylike = (postYouMayLike) => {
 }
 
 loadPOstYouMaylike(postYouMayLike)
+
+const nextBox = (event) =>{
+    location.href = './comin_soon.htm'
+}

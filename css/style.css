@@ -257,6 +257,21 @@ html::-webkit-scrollbar-thumb {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.coming-soon {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/sl_120320_38530_05.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
